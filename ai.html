@@ -1,0 +1,231 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <style>
+        div.hero {
+            background-image: url("hero.jpg");
+            width: 100%;
+            height: 600px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.5;
+            filter: alpha(opacity=50);
+        }
+
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+            z-index: 10;
+            position: absolute;
+            margin-left: 33%;
+            font-size: 45px;
+            margin-top: 230px;
+        }
+
+        .flex-box {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .flex-item {
+            display: inline-block;
+            width: 20%;
+            height: auto;
+            margin: 2.5%;
+            min-width: 150px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .flex-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width:800px) {
+            .flex-item {
+                width: 30.33%;
+            }
+        }
+
+        @media only screen and (max-width:560px) {
+            .flex-item {
+                width: 45%;
+            }
+        }
+
+        @media only screen and (max-width:360px) {
+            .flex-item {
+                width: 100%;
+            }
+        }
+
+        .about {
+            width: 100%;
+            height: 500px;
+            background-color: cornflowerblue;
+            margin-top: -15px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .about3 {
+            width: 100%;
+            height: 200px;
+            background-color: black;
+            margin-top: -15px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        .about2 {
+            width: 50%;
+            height: 500px;
+            background-color: black;
+            z-index: 10;
+        }
+
+        .about4 {
+            width: 20%;
+            height: 200px;
+            background-color: cornflowerblue;
+            z-index: 10;
+            margin-left: 80%;
+        }
+
+        .logo {
+            width: 60%;
+            margin-left: 20%;
+            margin-top: 190px;
+        }
+
+        h1.intro {
+            color: white;
+            margin-top: 90px;
+            margin-left: 17%;
+        }
+
+        h1.texttitle {
+            margin-left: 70%;
+            color: white;
+            margin-top: -400px;
+            position: absolute;
+        }
+
+        p.text {
+            color: white;
+            margin-left: 57%;
+            font-family: 'Quicksand', sans-serif;
+            position: absolute;
+            margin-top: -270px;
+            width: 40%;
+            font-size: 20px;
+        }
+
+        .pictures {
+            margin-top: 500px;
+        }
+
+        h2 {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+            margin:0;
+        }
+
+        img.next {
+            width: 35%;
+            margin-left: 30%;
+            margin-top: 55px;
+        }
+
+        h1.next {
+            color: white;
+            position: absolute;
+            margin-top: -120px;
+            margin-left: 30%;
+        }
+        
+        img.back{
+            position:absolute;
+            z-index:30;
+            width:5%;
+            margin-top:55px;
+            margin-left:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meet Your New Sidekick.</h1>
+    <a href="index.html"><img src="back.png" class="back"></a>
+    <div class="hero"></div>
+
+    <div class="about">
+        <div class="about2">
+            <h1 class="intro">Introducing...</h1><img class="logo" src="logo.png"></div>
+        <h1 class="texttitle">Hello 👋</h1>
+        <p class="text">My Name is Crib! I am your new home assistant. In the morning, I can wake you up, cook your breakfast, and schedule your transportation to work. While your gone, I can clean your house. Once you get home I can cook your dinner and cue up a movie. When you go to sleep, I can turn off the lights and start playing sleepsounds. Welcome to the future, with Crib.</p>
+    </div>
+
+    <div class="pictures">
+        <div class="flex-box">
+
+            <div class="flex-item">
+                <img src="alarm.jpg">
+                <h2>"Hey Crib, Wake Me Up at 5."</h2>
+            </div>
+
+            <div class="flex-item">
+                <img src="coffee.jpg">
+                <h2>"Hey Crib, Start My Coffee."</h2>
+            </div>
+
+            <div class="flex-item">
+                <img src="lamp.jpg">
+                <h2>"Hey Crib, Turn on The Lights."</h2>
+            </div>
+
+            <div class="flex-item">
+                <img src="uber.jpg">
+                <h2>"Hey Crib, Get Me A Ride to Work."</h2>
+            </div>
+
+            <div class="flex-item">
+                <img src="irobot.jpg">
+                <h2>"Hey Crib, Clean My Room."</h2>
+            </div>
+
+            <div class="flex-item">
+                <img src="oven.jpg">
+                <h2>"Hey Crib, Preheat The Oven to 350."</h2>
+            </div>
+
+            <div class="flex-item">
+                <img src="tv.jpg">
+                <h2>"Hey Crib, Play Netflix on The TV."</h2>
+            </div>
+
+            <div class="flex-item">
+                <img src="speaker.jpg">
+                <h2>"Hey Crib, Play My Sleep Playlist from Spotify."</h2>
+            </div>
+
+        </div>
+
+        <div class="about3">
+            <div class="about4"><img src="forward.png" class="next"></div>
+            <h1 class="next">Crib Home Product</h1>
+        </div>
+</body>
+
+</html>
