@@ -1,14 +1,15 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Crib Home</title>
+   <link href="https://fonts.googleapis.com/css?family=Kadwa:700|Quicksand" rel="stylesheet">
     <style>
         div.hero {
             background-image: url("concept.jpg");
             width: 100%;
             height: 600px;
             background-attachment: fixed;
-            background-position: ;
+            background-position: bottom;
             background-repeat: no-repeat;
             background-size: cover;
             opacity: 0.8;
@@ -21,7 +22,8 @@
             position: absolute;
             margin-left: 36%;
             font-size: 45px;
-            margin-top: 230px;
+            margin-top: 300px;
+            color:black;
         }
 
         .flex-box {
@@ -114,7 +116,7 @@
         }
 
         h1.texttitle {
-            margin-left: 60%;
+            margin-left: 62%;
             color: white;
             margin-top: -400px;
             position: absolute;
@@ -135,7 +137,10 @@
         }
 
         h2 {
-            font-family: 'Quicksand', sans-serif;
+           font-family: 'Kadwa', serif;
+            margin-left:10%;
+            font-weight:900;
+            font-size:30px;
         }
 
         body {
@@ -172,61 +177,129 @@
             font-family: 'Quicksand', sans-serif;
         }
         
-        img.picone{
+        .flex-box {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-top: 500px;
+            margin-left:13%;
+        }
+        
+        .flex-box2 {
+            width: 100%;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            margin-top: 0px;
+            margin-left:6%;
+        }
+
+        .flex-item {
+            display: inline-block;
+            width: 20%;
+            height: auto;
+            margin: 2.5%;
+            min-width: 150px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+         .flex-item2 {
+            display: inline-block;
+            width: 40%;
+            height: auto;
+            margin: 2.5%;
+            min-width: 150px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .flex-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        @media only screen and (max-width:800px) {
+            .flex-item {
+                width: 30.33%;
+            }
+        }
+
+        @media only screen and (max-width:560px) {
+            .flex-item {
+                width: 45%;
+            }
+        }
+
+        @media only screen and (max-width:360px) {
+            .flex-item {
+                width: 100%;
+            }
+        }
+        
+        div.price{
+            background-color: cornflowerblue;
+            color:white;
+            padding:100px;
+            width:30%;
+            margin-left:32%;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        h1.pricetext{
+            z-index:10;
+            color:white;
+            margin-left:120px;
+            position:absolute;
+            margin-top:-30px;
+        }
+        
+        h1.ReviewTitle{
+            font-family: 'Kadwa', serif;
+            position:absolute;
+            margin-top:10px;
+            margin-left:30%;
+        }
+        
+        h1.ReviewTitle2{
+            font-family: 'Kadwa', serif;
+            position:absolute;
+            margin-top:10px;
+            margin-left:25%;
+        }
+        
+        .flex-item3{
+            display: inline-block;
+            width: 40%;
+            height: 400px;
+            margin: 2.5%;
+            min-width: 150px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 5px 10px 18px #888888;
+            border: 10px solid;
+            font-family: 'Kadwa', serif;
+        }
+        
+        img.stars{
+            position:absolute;
             margin-top:100px;
-            width:40%;
-            margin-left:10%;
+            margin-left:30%;
         }
         
-        div.textone{
-            background-color:#d6d7d8;
-            width:40%;
-            margin-left:50%;
+        p.review{
             position:absolute;
-            margin-top:-540px;
-            height:540px;
-            font-family: 'Quicksand', sans-serif;
-            z-index:30;
+            margin-top:200px;
+            padding:50px;
         }
         
-        h1.title{
-           margin-left:30%; 
-            margin-top:150px;
-            width:5%;
-            font-size:60px;
-        }
         
-        img.pictwo{
-            width:40%;
-            margin-left:50%;
-        }
-        
-        div.texttwo{
-            background-color:#d6d7d8;
-            width:40%;
-            margin-left:10%;
-            position:absolute;
-            margin-top:-540px;
-            height:540px;
-            font-family: 'Quicksand', sans-serif;
-        }
-        
-        img.picthree{
-            margin-top:-5-0px;
-            width:40%;
-            margin-left:10%;
-        }
-        
-        div.textthree{
-            background-color:#d6d7d8;
-            width:40%;
-            margin-left:50%;
-            position:absolute;
-            margin-top:-540px;
-            height:540px;
-            font-family: 'Quicksand', sans-serif;
-            z-index:30;
-        }
 
     </style>
 </head>
@@ -239,7 +312,7 @@
     <div class="about">
         <div class="about2">
             <h1 class="intro">Introducing...</h1><img class="logo" src="logo_home.png"></div>
-        <h1 class="texttitle">You'll Fall in Love 😍</h1>
+        <h1 class="texttitle">You'll Fall in Love ðŸ˜</h1>
         <p class="text">Features:</p>
         <ul>
             <li>4k Resolution Screen</li>
@@ -249,17 +322,61 @@
         </ul>
     </div>
 
-    <div class="pictures">
-<img class="picone" src="lamp2.jpg">
-<div class="textone"><h1 class="title"><b>Control Your Devices.</b></h1></div>
-        <img class="pictwo" src="tv2.jpg">
-<div class="texttwo"><h1 class="title"><b>Control Your Media.</b></h1></div>
-        <img class="picthree" src="cal.jpg">
-<div class="textthree"><h1 class="title"><b>Control Your Life.</b></h1></div>
+        <div class="flex-box">
+
+            <div class="flex-item">
+                <img src="lamp2.jpg">
+               <h2>Control Your Devices.</h2>
+            </div>
+            
+
+            <div class="flex-item">
+                <img src="tv2.jpg">
+                <h2>Control Your Media.</h2>
+            </div>
+            
+
+            <div class="flex-item">
+                <img src="cal.jpg">
+                <h2>Control Your Life.</h2>
+            </div>
         </div>
+    
+    <div class="flex-box2">
+
+            <div class="flex-item2">
+                <img src="concept2.jpg">
+               
+            </div>
+
+            <div class="flex-item2">
+                <img src="concept4.jpg">
+            </div>
+        </div>
+    
+    <div class="flex-box2">
+
+            <div class="flex-item3">
+                <b><h1 class="ReviewTitle">Great Product</h1></b>
+                <img class="stars" src="reviews.jpg">
+                <p class="review">This product changes the way I lived my life. It made me more productive and I would strongly recommend it to everyone.</p>
+               
+            </div>
+
+            <div class="flex-item3">
+                <b><h1 class="ReviewTitle2">AWESOME DEVICE!</h1></b>
+                <img class="stars" src="reviews.jpg">
+                <p class="review">The build quality on this device is the best I have seen. The 4K screen and the booming speakers make it the best available option.</p>
+            </div>
+        </div>
+    
+    
+    
+<div class="price"><h1 class="pricetext">Price: $120 USD</h1></div>
+
 
         <div class="about3">
-            <div class="about4"><img src="forward.png" class="next"></div>
+            <a href="resources.html"><div class="about4"><img src="forward.png" class="next"></div></a>
             <h1 class="next">Resources</h1>
         </div>
 </body>
