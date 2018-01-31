@@ -1,6 +1,8 @@
+
 <html>
 
 <head>
+    <title>Navigation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <style>
         div{
@@ -20,14 +22,27 @@
         div.four{
             margin-left:75%;
         }
-        div:hover{
+        div.one:hover{
             background: linear-gradient(to bottom, #33ccff 0%, #000099 100%);
+        }
+        
+        div.two:hover{
+            background: linear-gradient(to right, #11998e, #38ef7d);
+        }
+        
+        div.three:hover{
+            background: linear-gradient(to bottom, #fc466b, #3f5efb);
+        }
+        
+        div.four:hover{
+            background: linear-gradient(to bottom, #ff4e50, #f9d423);
         }
         
         h1{
             color:white;
             font-family: 'Quicksand', sans-serif;
             margin-top:500px;
+            
         }
         
         img{
@@ -39,7 +54,7 @@
         body{
             overflow-x: hidden;
             overflow-y: hidden;
-            margin:0;
+			margin:0;
         }
         
 
@@ -54,10 +69,10 @@
 }, 2500);
     </script>
     <img class="animated slideInDown" src="logo.png">
-    <div class="one"><h1 style="text-align:center">About Crib</h1></div>
+    <a href="about.html"><div class="one"><h1 style="text-align:center">About Crib</h1></div></a>
     <a href="AI.html"><div class="two"><h1 style="text-align:center">Our AI</h1></div></a>
     <a href="Product.html"><div class="three"><h1 style="text-align:center">Our Product</h1></div></a>
-    <div class="four"><h1 style="text-align:center">Resources</h1></div>
+    <a href="resources.html"><div class="four"><h1 style="text-align:center">Resources</h1></div></a>
 </body>
 
 </html>
