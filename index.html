@@ -58,6 +58,62 @@ h1
     color:white;
     font-family:'Quicksand', sans-serif;
 }
+	    
+	    /* Animation */
+@keyframes homelogo
+{
+    from {margin-top:0%; opacity:0;}
+    to {margin-top:10%; opacity:1;}
+}
+@keyframes buttonhoverhome
+{
+	from {background-color:#3F54BD;}
+	to {background-color:#506CF2;}
+}
+/* Mobile Code */
+
+@media only screen and (max-width: 1024px)
+{
+	.homenav
+	{
+		height:40em;
+		position:relative;
+	}
+	.header-button
+	{
+		height:10em;
+		width:100%;
+		border-bottom-style:solid;
+		border-top-style:solid;
+		border-color:black;
+		background-color:#3F54BD;
+		float:left;
+	}
+	.header-button-text
+	{
+		height:2em;
+		margin:0;
+		margin-top:8%;
+		color:white;
+		float:left;
+		padding:0%;
+		width:100%;
+	}
+	.logobox
+	{
+		position:relative;
+		background-color:#3F54BD;
+		height:2 0em;
+		width:100%;
+		text-align:center;
+		z-index:1;
+	}
+	.homelogo
+	{
+		position:relative;
+		margin:0;
+	}
+}
     </style>
 
 </head>
