@@ -2,6 +2,7 @@
 
 <head>
     <title>About</title>
+	
    <link href="https://fonts.googleapis.com/css?family=Kadwa:700|Quicksand" rel="stylesheet">
     <style>
         div.hero {
@@ -9,7 +10,6 @@
             width: 100%;
             height: 600px;
             background-attachment: fixed;
-            background-position: ;
             background-repeat: no-repeat;
             background-size: cover;
             opacity: 0.8;
@@ -44,21 +44,6 @@
             display: block;
             width: 100%;
             height: auto;
-        }
-        @media only screen and (max-width:800px) {
-            .flex-item {
-                width: 30.33%;
-            }
-        }
-        @media only screen and (max-width:560px) {
-            .flex-item {
-                width: 45%;
-            }
-        }
-        @media only screen and (max-width:360px) {
-            .flex-item {
-                width: 100%;
-            }
         }
         .about {
             width: 100%;
@@ -155,52 +140,13 @@
             font-family: 'Quicksand', sans-serif;
         }
         
-        .flex-box {
-            width: 100%;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            margin-top: 500px;
-            margin-left:13%;
-        }
-        
-        .flex-box2 {
-            width: 100%;
-            position: relative;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            margin-top: 600px;
-            margin-left:11%;
-        }
-        .flex-item {
-            display: inline-block;
-            width: 20%;
-            height: auto;
-            margin: 2.5%;
-            min-width: 150px;
-            position: relative;
-            overflow: hidden;
-        }
-        
-         .flex-item2 {
-            display: inline-block;
-            width: 35%;
-            height: auto;
-            margin: 2.5%;
-            min-width: 150px;
-            position: relative;
-            overflow: hidden;
-        }
+
         .flex-item img {
             display: block;
             width: 100%;
             height: auto;
         }
-        @media only screen and (max-width:800px) {
+        @media only screen and (max-width:800px) 
             .flex-item {
                 width: 30.33%;
             }
@@ -266,10 +212,15 @@
             margin-left:20%;
         }
         @media only screen and (max-width: 1000px) {
-       .listtext{
+       .about{
+	   width:125%;
+	   }
+	   .listtext{
 	   font-size:200%;
 	   }
-	   
+	   body{
+	   margin-right:-25%;
+	   }
 	   }
     </style>
 </head>
