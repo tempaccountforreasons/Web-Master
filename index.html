@@ -5,74 +5,69 @@
     <title>Navigation</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <style>
-        div{
-            height:100%;
-            width:25%;
-            background-color:#27214f;
-            position:absolute;
-        }
-        
-        div.two{
-            margin-left:25%;
-        }
-        
-        div.three{
-            margin-left:50%;
-        }
-        div.four{
-            margin-left:75%;
-        }
-        div.one:hover{
-            background: linear-gradient(to bottom, #33ccff 0%, #000099 100%);
-        }
-        
-        div.two:hover{
-            background: linear-gradient(to right, #11998e, #38ef7d);
-        }
-        
-        div.three:hover{
-            background: linear-gradient(to bottom, #fc466b, #3f5efb);
-        }
-        
-        div.four:hover{
-            background: linear-gradient(to bottom, #ff4e50, #f9d423);
-        }
-        
-        h1{
-            color:white;
-            font-family: 'Quicksand', sans-serif;
-            margin-top:500px;
-            
-        }
-        
-        img{
-            position:absolute;
-            margin-left:34%;
-            width:30%;
-            z-index:10;
-        }
-        body{
-            overflow-x: hidden;
-            overflow-y: hidden;
-			margin:0;
-        }
+.logobox
+{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	z-index:1;
+}
+.homenav
+{
+	height:100%;
+	width:100%;
+	position:fixed;
+}
+.header-button
+{
+    height:100%;
+    width:25%;
+    background-color:#3F54BD;
+    text-align:center;
+    float:left;
+}
+.header-button-text
+{
+	height:1em;
+	padding-top:150%;
+	width:100%;
+}
+.header-button:hover
+{
+	animation-name:buttonhoverhome;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+} 
+.homelogo
+{
+    position:absolute;
+    width:30%;
+	margin-left:-18%;
+    animation-name:homelogo;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+h1
+{
+    color:white;
+    font-family:'Quicksand', sans-serif;
+}
         
 
     </style>
 
 </head>
 
-<body>
-    <script>
-    setTimeout(function(){
-    document.getElementById('aap').className = 'waa';
-}, 2500);
-    </script>
-    <img class="animated slideInDown" src="logo.png">
-    <a href="about.html"><div class="one"><h1 style="text-align:center">About Crib</h1></div></a>
-    <a href="ai.html"><div class="two"><h1 style="text-align:center">Our AI</h1></div></a>
-    <a href="Product.html"><div class="three"><h1 style="text-align:center">Our Product</h1></div></a>
-    <a href="resources.html"><div class="four"><h1 style="text-align:center">Resources</h1></div></a>
-</body>
+ <body style="height:100%;background-color:#3F54BD;">
+		<div class="logobox">
+			<img class="homelogo" src="logo.png" alt="CRIB">
+		</div>
+		<nav class="homenav">
+			<a href="about.html"><div id="one" class="header-button"><h1 class="header-button-text">About Crib</h1></div></a>
+			<a href="ai.html"><div id="two" class="header-button"><h1 class="header-button-text">Our AI</h1></div></a>
+			<a href="Product.html"><div id="three" class="header-button"><h1 class="header-button-text">Our Product</h1></div></a>
+			<a href="resources.html"><div id="four" class="header-button"><h1 class="header-button-text">Resources</h1></div></a>
+		</nav>
+    </body>
 
 </html>
