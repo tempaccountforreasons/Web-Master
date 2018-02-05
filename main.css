@@ -1,0 +1,137 @@
+body, html
+{
+    padding:0;
+    margin:0;
+}
+/* Home Page */
+.logobox
+{
+	position:absolute;
+	width:100%;
+	text-align:center;
+	z-index:1;
+}
+.homenav
+{
+	height:100%;
+	width:100%;
+	position:fixed;
+}
+.header-button
+{
+    height:100%;
+    width:25%;
+    background-color:#3F54BD;
+    text-align:center;
+    float:left;
+}
+.header-button-text
+{
+	height:1em;
+	padding-top:150%;
+	width:100%;
+}
+.header-button:hover
+{
+	animation-name:buttonhoverhome;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+} 
+.homelogo
+{
+    position:absolute;
+    width:30%;
+	margin-left:-18%;
+    animation-name:homelogo;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+}
+h1
+{
+    color:white;
+    font-family:'Quicksand', sans-serif;
+}
+/* About Page */
+.aboutback
+{
+	background-image:url("img/building.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+}
+nav
+{
+	width:100%;
+	margin:0;
+	height:2em;
+}
+header
+{
+	width:30%;
+	margin-left:35%;
+	position:absolute;
+}
+.back
+{
+	position:fixed;
+	width:8em;
+}
+.back-button
+{
+    width:1em;
+    border:none;
+}
+/* Animation */
+@keyframes homelogo
+{
+    from {margin-top:0%; opacity:0;}
+    to {margin-top:10%; opacity:1;}
+}
+@keyframes buttonhoverhome
+{
+	from {background-color:#3F54BD;}
+	to {background-color:#506CF2;}
+}
+/* Mobile Code */
+
+@media only screen and (max-width: 1024px)
+{
+	.homenav
+	{
+		height:40em;
+		position:relative;
+	}
+	.header-button
+	{
+		height:10em;
+		width:100%;
+		border-bottom-style:solid;
+		border-top-style:solid;
+		border-color:black;
+		background-color:#3F54BD;
+		float:left;
+	}
+	.header-button-text
+	{
+		height:2em;
+		margin:0;
+		margin-top:8%;
+		color:white;
+		float:left;
+		padding:0%;
+		width:100%;
+	}
+	.logobox
+	{
+		position:relative;
+		background-color:#3F54BD;
+		height:2 0em;
+		width:100%;
+		text-align:center;
+		z-index:1;
+	}
+	.homelogo
+	{
+		position:relative;
+		margin:0;
+	}
+}
